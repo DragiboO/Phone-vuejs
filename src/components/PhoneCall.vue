@@ -1,13 +1,13 @@
 <template>
-    <img src="@/assets/phone-call.svg" alt="phonecall">
+  <img src="@/assets/phone-call.svg" alt="phonecall">
 </template>
 
 <script>
 export default {
-    name: 'PhoneCall',
+  name: 'PhoneCall',
 }
 </script>
 
 <style scoped>
-    
+
 </style>

@@ -1,11 +1,11 @@
 <template>
-    <div class="card">
-        <p>{{ contact.name }}</p>
-        <div class="right">
-            <p>{{ contact.number }}</p>
-            <PhoneCall @click="call(contact.name, contact.number)"/>
-        </div>
-    </div>
+	<div class="card">
+		<p>{{ contact.name }}</p>
+		<div class="right">
+			<p>{{ contact.number }}</p>
+			<PhoneCall @click="call(contact.name, contact.number)"/>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -38,29 +38,29 @@ export default {
 			this.phoneCall.date = this.date
 
 			this.$store.commit('phoneCall', this.phoneCall)
-        } 
+    } 
 	}
 }
 </script>
 
 <style scoped>
-    .card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: #2c3e50 2px solid;
-        color: #2c3e50;
-        padding-bottom: 0.5rem;
-    }
+	.card {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: #2c3e50 2px solid;
+		color: #2c3e50;
+		padding-bottom: 0.5rem;
+	}
 
-    .right {
-        width: 45%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+	.right {
+		width: 45%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
-    .card p:nth-child(1) {
-        font-weight: bold;
-    }
+	.card p:nth-child(1) {
+		font-weight: bold;
+	}
 </style>
