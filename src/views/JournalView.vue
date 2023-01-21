@@ -14,11 +14,11 @@ export default {
   components: {
     CardCall
   },
-	computed: {
-		calls() {
-			return this.$store.state.calls
-		}
-	}
+  computed: {
+    calls() {
+      return this.$store.state.calls
+    }
+  }
 }
 
 </script>
